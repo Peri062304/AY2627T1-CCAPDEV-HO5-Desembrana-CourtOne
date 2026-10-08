@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> CourtOne </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- Background color -->
+  <body class="bg-body-secondary py-4">
+
+    <div class="container text-center">
+      <h1 class="mb-4 text-primary fw-bold">
+        CourtOne
+      </h1>
+      <h5 class="mb-5 text-secondary fw-semibold">
+        by Yuan Peri Desembrana of S15 Group 1
+      </h5>
+      
+      <!-- Top Grid Row -->
+      <!-- 2 Columns on Laptops (col-lg-6) -->
+      <!-- Stacks into full width on Mobiles -->
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-lg-6">
+          <div class="card p-3 shadow-sm h-100">
+            <h5 class="card-title text-secondary">
+              User Account Demographics
+            </h5>
+            <div class="chart-container">
+              <canvas id="userRolesChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card p-3 shadow-sm h-100">
+            <h5 class="card-title text-secondary">
+              Fulfillment & Status Rates
+            </h5>
+            <div class="chart-container">
+              <canvas id="bookingStatusChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Grid Row: 1 Full-width block stretching seamlessly across views -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card p-3 shadow-sm">
+            <h5 class="card-title text-secondary">
+              Hourly Reservation Demand Peaks
+            </h5>
+            <div class="chart-container-tall">
+              <canvas id="peakTimeslotsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- JS File -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
